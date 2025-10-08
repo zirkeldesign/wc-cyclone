@@ -1,4 +1,5 @@
 {
+    "name": "metorikhq/wp-cyclone",
     "type": "wordpress-plugin",
     "require": {
         "fakerphp/faker": "^1.24",
