@@ -19,7 +19,7 @@ class Generate {
 		do {
 			$title = ucwords( $faker->words( 2, true ) );
 			$category = $faker->randomElement( array( 'Drama', 'Mystery', 'Romance', 'Horror', 'Travel', 'Health' ) );
-		} while( get_page_by_title( $title, 'OBJECT', 'product' ) );
+		} while( Helpers::getPageByTitle( $title, 'OBJECT', 'product' ) );
 
 		// Create product
 		$product = [
